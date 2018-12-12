@@ -11,73 +11,38 @@
 </head>
 
 <body>
-    <div data-role="page" id="main">
-        <div data-role="header" data-position="fixed">
+    <div data-role="page" id="home">
+        <div data-role="header">
             <h1>Home</h1>
-            <div data-role="navbar">
-                <ul>
-                    <li><a href="#index" data-icon="home" class="ui-btn-active">Home</a></li>
-                    <li><a href="#contacts" data-icon="search">Contacts</a></li>
-                    <li><a href="#events" data-icon="info">Events</a></li>
-                    <li><a href="#news" data-icon="grid">News</a></li>
-                </ul>
-            </div>
         </div>
         <div data-role="content">
-            <h2>Up and Running with jQuery Mobile</h2>
-            <p>Author: <b>Maximiliano Firtman</b></p>
-            <p>This book has no reviews yet on our database.</p>
-            <p>
-                <a href="./confirmation.html" data-rel="dialog" data-role="button">
-                    Delete this book
-                </a>
-                <a href="" data-role="button">
-                    Modify this book
-                </a>
-                <a href="tel:15522962525" data-role="button">Call Me!</a>
-                <a href="mailto:bostonhsu@outlook.com?suject=test" data-role="button">Mail Me!</a>
-                <a href="sms://15522962525?body=Visit%20the%20best" data-role="button">SMS Me!</a>
-            </p>
+            <p>This is content for the home</p>
         </div>
-        <div data-role="footer">
+        <div data-role="footer" data-id="main" position="fixed">
             <div data-role="navbar">
                 <ul>
-                    <li><a href="link1">Link1</a></li>
-                    <li><a href="link2">Link2</a></li>
-                    <li><a href="link3">Link3</a></li>
-                    <li><a href="link4">Link4</a></li>
+                    <li><a data-icon="home" class="ui-btn-active ui-state-persist">Home</a></li>
+                    <li><a href="#help" data-icon="alert">Help</a></li>
                 </ul>
             </div>
         </div>
     </div>
-    <div data-role="page" id="page1" data-add-back-btn="true" data-back-btn-text="Previous" data-back-btn-theme="e">
-        <div data-role="header">
-            <h1>First Page</h1>
+    <div data-role="page" id="help">
+            <div data-role="header">
+                <h1>Help</h1>
+            </div>
+            <div data-role="content">
+                <p>This is content for Help</p>
+            </div>
+            <div data-role="footer" data-id="main" position="fixed">
+                <div data-role="navbar">
+                    <ul>
+                        <li><a href="#home" data-icon="home">Home</a></li>
+                        <li><a data-icon="alert" class="ui-btn-active ui-state-persist">Help</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <div data-role="content">
-            <p>This is the main content of the page.</p>
-            <p>You can go to the <a href="#page2" data-transition="flip">second page</a>.</p>
-            <p>Open a new Dialog <a href="./external.html" data-rel="dialog">dialog</a></p>
-        </div>
-        <div data-role="footer">
-            <h4>More on mobilexweb.com</h4>
-        </div>
-    </div>
-    <div data-role="page" id="page2" data-title="This is the second page" data-add-back-btn="true" data-back-btn-text="Previous"
-        data-back-btn-theme="e">
-        <div data-role="header">
-            <h1>Second Page</h1>
-        </div>
-        <div data-role="content">
-            <p>This is the main content of the second page.</p>
-            <p>You can go back using the header's button, <a href="#page1" data-rel="back">clicking here</a> or using
-                your browser's back button.</p>
-            <p>A external html. <a href="external.html" data-ajax="false">External here.</a></p>
-        </div>
-        <div data-role="footer">
-            <h4>mobilexweb.com</h4>
-        </div>
-    </div>
 </body>
 
 </html>
