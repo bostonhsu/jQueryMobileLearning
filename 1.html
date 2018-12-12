@@ -9,15 +9,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
-    <div data-role="page" data-add-back-btn="true" data-back-btn-text="Previous" data-back-btn-theme="e">
+    <div data-role="page" id="page1" data-add-back-btn="true" data-back-btn-text="Previous" data-back-btn-theme="e">
         <div data-role="header">
-            <h1>Our first webapp</h1>
+            <h1>First Page</h1>
         </div>
         <div data-role="content">
             <p>This is the main content of the page.</p>
+            <p>You can go to the <a href="#page2">second page</a>.</p>
         </div>
         <div data-role="footer">
             <h4>More on mobilexweb.com</h4>
+        </div>
+    </div>
+    <div data-role="page" id="page2" data-title="This is the second page" data-add-back-btn="true" data-back-btn-text="Previous" data-back-btn-theme="e">
+        <div data-role="header">
+            <h1>Second Page</h1>
+        </div>
+        <div data-role="content">
+            <p>This is the main content of the second page.</p>
+            <p>You can go back using the header's button, <a href="#page1">clicking here</a> or using your browser's back button.</p>
+        </div>
+        <div data-role="footer">
+            <h4>mobilexweb.com</h4>
         </div>
     </div>
 </body>
