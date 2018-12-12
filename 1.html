@@ -1,14 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css"/>
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
     <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+
 <body>
+    <div data-role="page" id="main">
+        <div data-role="header">
+            <h1>Book Properties</h1>
+        </div>
+        <div data-role="content">
+            <h2>Up and Running with jQuery Mobile</h2>
+            <p>Author: <b>Maximiliano Firtman</b></p>
+            <p>This book has no reviews yet on our database.</p>
+            <p>
+                <a href="./confirmation.html" data-rel="dialog" data-role="button">
+                    Delete this book
+                </a>
+                <a href="" data-role="button">
+                    Modify this book
+                </a>
+            </p>
+        </div>
+        <div data-role="footer">
+            <h4>O'Reilly Store</h4>
+        </div>
+    </div>
     <div data-role="page" id="page1" data-add-back-btn="true" data-back-btn-text="Previous" data-back-btn-theme="e">
         <div data-role="header">
             <h1>First Page</h1>
@@ -22,13 +45,15 @@
             <h4>More on mobilexweb.com</h4>
         </div>
     </div>
-    <div data-role="page" id="page2" data-title="This is the second page" data-add-back-btn="true" data-back-btn-text="Previous" data-back-btn-theme="e">
+    <div data-role="page" id="page2" data-title="This is the second page" data-add-back-btn="true" data-back-btn-text="Previous"
+        data-back-btn-theme="e">
         <div data-role="header">
             <h1>Second Page</h1>
         </div>
         <div data-role="content">
             <p>This is the main content of the second page.</p>
-            <p>You can go back using the header's button, <a href="#page1" data-rel="back">clicking here</a> or using your browser's back button.</p>
+            <p>You can go back using the header's button, <a href="#page1" data-rel="back">clicking here</a> or using
+                your browser's back button.</p>
             <p>A external html. <a href="external.html" data-ajax="false">External here.</a></p>
         </div>
         <div data-role="footer">
@@ -36,4 +61,5 @@
         </div>
     </div>
 </body>
+
 </html>
