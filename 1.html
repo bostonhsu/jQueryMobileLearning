@@ -8,6 +8,11 @@
     <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
     <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .ui-icon-test-hearts {
+            background-image: url(icons/hearts-black.png);
+        }
+    </style>
 </head>
 
 <body>
@@ -16,6 +21,8 @@
             <h1>Home</h1>
         </div>
         <div data-role="content">
+            <a href="#" data-role="button" data-icon="heart-black">My Heart</a>
+            <a href="#" data-role="button" data-icon="test-hearts">Custome Icon Button</a>
             <a href="#" data-role="button" data-shadow="false" data-corners="false">Help</a>
             <div data-role="controlgroup" data-type="horizontal">
                 <a href="#" data-role="button" data-inline="true">Button 1</a>
