@@ -8,7 +8,18 @@
     <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
 
     <!--Your mobileinit codes here-->
-    <script src="customecode.js"></script>
+    <script>
+        function addPages() {
+            for (var i = 1; i < 5; i++) {
+                var page = $("<div>").jqmData("role", "page").attr("id", "page" + i);
+                $("<div>").attr("data-role", "header").append($("<h1>").html("Page" + i)).appendTo(page);
+                $("<div>").attr("data-role", "content").append($("<p>").html("Contents for page" + i)).appendTo(page);
+                $("body").append(page);
+                $("<li>").append($("<a>").attr("href", "#page" + i).html("Go to page" + i)).appendTo("#list1");
+            }
+            $("#button1").hide();
+        };
+    </script>
     <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -19,7 +30,17 @@
 </head>
 
 <body>
+    <div data-role="page">
+        <div data-role="header">
+            <h1>Dynamic page</h1>
+        </div>
+        <div data-role="content">
+            <a href="javascript:addPages()" id="button1" data-role="button">Add Pages</a>
+            <ul id="list1"></ul>
+        </div>
+    </div>
     <div data-role="page" id="main">
+
         <div data-role="header">
             <h1>Interactive</h1>
         </div>
