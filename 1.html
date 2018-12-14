@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.css" />
     <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+
+    <!--Your mobileinit codes here-->
+    <script src="customcode.js"></script>
     <script src="http://code.jquery.com/mobile/1.0/jquery.mobile-1.0.min.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -23,6 +26,8 @@
         <div data-role="content">
 
             <form action="#" method="GET" data-transition="pop">
+                <label for="uploadFile">Choose Your File:</label>
+                <input type="file" id="uploadFile">
                 <legend>Delivery options</legend>
                 <div data-role="controlgroup">
                     <label for="optionGift">Pack it as a Gift</label>
