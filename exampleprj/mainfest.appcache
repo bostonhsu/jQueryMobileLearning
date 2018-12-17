@@ -1,0 +1,36 @@
+CACHE MANIFEST
+
+CACHE:
+
+# jQuery Mobile's files
+jquery.js 
+jquery.mobile.js
+jquery.mobile.css
+images/ajax-loader.png
+images/icons-18-black.png
+images/icons-18-white.png
+images/icons-36-black.png
+images/icons-36-white.png
+
+# HTML documents
+# index.html is always cached implicitly
+feedback.html
+
+# Custom script and CSS
+index.js
+index.css
+
+# Custom images
+logo.png
+sponsors.png
+background.png
+
+# We don't need to cache iOS icons or launch image as the
+# platform will cache it by itself
+
+NETWORK:
+# We will go to the network only for the JSON file
+# and the script that will receive the feedback
+# replace mobilexweb.com with your own domain
+http://mobilexweb.com/jqmbook/sessions.json
+http://mobilexweb.com/jqmbook/feedback.php
