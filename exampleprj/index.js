@@ -84,7 +84,7 @@ function showIOSInvitation() {
 
 function loadSessionsAjax() {
 	// We bring the JSON as text so it's easy to store in Local Storage
-	$.ajax(/*"http://www.mobilexweb.com/congress/*/"sessions.json", {
+	$.ajax(/*"http://localhost/congress/*/"sessions.json", {
 		complete: function(xhr) {
 			if (window.localStorage!=undefined) {
 				if (window.localStorage.getItem("data")!=undefined && window.localStorage.getItem("data")!=null) {
