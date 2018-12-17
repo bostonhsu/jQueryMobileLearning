@@ -17,19 +17,19 @@
   <div data-role="header">
     <h1>Feedback</h1>
   </div>
-
+  
   <div data-role="content">
-
-     <?php
-         // Validation and processing here
-
-         ?>
+     
+     <?php 
+	 // Validation and processing here 
+	 
+	 ?>
      Thanks for your feedback.
-
+     
      <a data-role="button" data-inverse="true" href="index.html">Close</a>
-
+     
   </div>
-
+  
 </div>
 </body>
 </html>
