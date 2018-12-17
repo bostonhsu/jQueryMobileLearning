@@ -1,0 +1,23 @@
+{
+    "slots": [
+        {
+            "id": 1,
+            "time": "09:00",
+            "message": "Opening"
+        },
+        {
+            "id": 2,
+            "time": "09:20"
+        }
+    ],
+    "sessions": [
+        {
+            "id": 1,
+            "title": "A great session",
+            "timeId": 2,
+            "description": "...",
+            "speaker": "...",
+            "room": "..."
+        }
+    ]
+}
